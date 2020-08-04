@@ -1,15 +1,16 @@
 import React from 'react';
+import './Header.css';
 import NavArrow from './NavArrow';
 
 const Header = () => {
   return (
     <header>
-      <h1 style="margin-bottom: 10px;">LOREM IPSUM</h1>
-      <p style="width: 70%; font-size: large; margin-top: 0;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <div className="header-content">
+        <h1>LOREM IPSUM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <NavArrow className="nav-arrow-wrapper-header" />
     </header>
-    <NavArrow />
   );
 };
 

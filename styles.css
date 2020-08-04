@@ -74,6 +74,10 @@ header {
   .nav-arrow-wrapper {
     display: none;
   }
+  
+  header p {
+    color: #213800;
+  }
 }
 
 /* slider */

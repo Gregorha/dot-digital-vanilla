@@ -1,0 +1,56 @@
+h1 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+
+p {
+  font-size: large;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+header {
+  align-items: center;
+  background: #434343;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-content {
+  width: 70%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .arrow-wrapper {
+    display: none;
+  }
+
+  header .arrow-wrapper {
+    display: inherit;
+    position: relative;
+  }
+
+  header h1 {
+    color: #4d6128;
+    font-size: 3vw;
+  }
+
+  header p {
+    color: #213800;
+    font-size: 1.5vw;
+  }
+
+  header {
+    background: none;
+    color: #4d6128;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}
