@@ -1,0 +1,44 @@
+.arrow {
+  display: block;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+}
+
+.header-arw {
+  fill: #303030;
+  margin: auto;
+  position: relative;
+}
+
+.header-arw:hover {
+  fill: #4d6128;
+}
+
+header .arrow-wrapper {
+  display: none;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navTo {
+  position: absolute;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .arrow-wrapper {
+    display: none;
+  }
+
+  header .arrow-wrapper {
+    display: inherit;
+    position: relative;
+  }
+  
+}
