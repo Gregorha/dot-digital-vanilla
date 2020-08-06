@@ -3,7 +3,7 @@ import phoneMask from './phoneMask.js';
 import { moveSlide, initiateCarouselSlides } from './carouselSlides.js';
 import { moveGroup, initiateCarouselGroups, createGroups } from './carouselGroups.js';
 
-const slides = document.getElementsByClassName('slide');
+const slider = document.getElementsByClassName('slider')[0];
 const selectors = document.getElementsByClassName('selector');
 
 const headerArw = document.getElementsByClassName('navTo');
@@ -22,11 +22,10 @@ for (let i = 0; i < selectors.length; i++) {
   selectors[i].addEventListener('click', () => showSlide(i));
 }
 const showSlide = (n) => {
+  slider.style.transform = `translateX(${-100 * n}%)`;
   for (let i = 0; i < selectors.length; i++) {
-    slides[i].className = 'slide hide';
     selectors[i].className = 'selector';
   }
-  slides[n].className = 'slide show';
   selectors[n].className = 'selector selected';
 };
 

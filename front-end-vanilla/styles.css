@@ -113,16 +113,22 @@ header {
   opacity: 0;
   visibility: hidden;
 }
-.show {
-  opacity: 1;
-  transition: opacity 0.6s ease;
-  visibility: visible;
-}
-.image-slider {
+
+.slider {
   height: 100%;
-  max-height: inherit;
+  left: 0;
   position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  transition: transform 0.6s ease;
 }
+
+.image-slider {
+  width: 100%;
+  max-height: inherit;
+}
+
 .slide-frame {
   box-sizing: border-box;
   overflow: hidden;
@@ -130,12 +136,9 @@ header {
   position: relative;
   width: 100%;
 }
+
 .slide {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 @media (min-width: 768px) {
