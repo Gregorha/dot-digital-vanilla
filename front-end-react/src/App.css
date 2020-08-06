@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+
+.body {
+  background: #434343;
+  color: white;
+  font-family: helvetica, sans-serif, Arial;
+  height: 100%;
+  margin: 0;
+}
+
+body p {
+  font-size: medium;
+}

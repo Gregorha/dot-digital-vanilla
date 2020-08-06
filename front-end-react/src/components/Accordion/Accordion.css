@@ -1,0 +1,74 @@
+.accordion-wrapper {
+  background-color: #bfbfbf;
+}
+
+.arw-accordion {
+  fill: white;
+  height: 30px;
+  position: relative;
+  transition: all 0.6s ease;
+  width: 30px;
+  top: 0;
+}
+
+.accordion {
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 15px auto;
+  width: 90%;
+}
+
+.ant-collapse-item {
+  background-color: #707070;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  font-weight: bold;
+  color: white;
+  font-size: large;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header:hover {
+  color: #707070;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  top: 25%;
+}
+
+.ant-collapse-content-box {
+  background-color: white;
+  text-align: center;
+}
+
+.ant-collapse-item.ant-collapse-item-active .ant-collapse-header {
+  background-color: white;
+  color: #707070;
+}
+
+.ant-collapse-header:hover {
+  background-color: white;
+}
+
+.ant-collapse-header:hover .arw-accordion,
+.ant-collapse-item.ant-collapse-item-active .arw-accordion {
+  fill: #707070;
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    margin: 45px auto;
+    width: 85%;
+  }
+  .accordion-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: initial;
+  }
+  .accordion-image {
+    margin-right: 25px;
+    width: 25vw;
+  }
+}

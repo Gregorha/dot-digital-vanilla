@@ -74,6 +74,10 @@ header {
   .nav-arrow-wrapper {
     display: none;
   }
+  
+  header p {
+    color: #213800;
+  }
 }
 
 /* slider */
@@ -324,6 +328,7 @@ header {
     width: 60%;
   }
   .article-wrapper {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
