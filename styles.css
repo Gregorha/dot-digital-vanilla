@@ -325,6 +325,7 @@ header {
     width: 60%;
   }
   .article-wrapper {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './NavArrow.css';
 
 const NavArrow = () => {
   return (
     <div className="arrow-wrapper">
-      <a href="#carousel" className="navTo">
+      <Link to="carousel" smooth={true} duration={600} className="navTo">
         <svg
           className="arrow header-arw"
           width="150"
@@ -17,7 +18,7 @@ const NavArrow = () => {
             strokeWidth="4"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };

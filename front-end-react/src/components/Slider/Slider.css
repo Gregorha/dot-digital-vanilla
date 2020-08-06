@@ -53,8 +53,16 @@
 
 @media (min-width: 768px) {
   .slide {
-    padding-top: 50%;
+    height: 100vh;
+    padding-top: 0;
   }
+
+  .image-slide {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .ant-carousel .slick-dots li {
     border: 6px solid #303030;
     height: 30px;
