@@ -1,0 +1,24 @@
+footer {
+  background-color: #313131;
+  fill: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-text-container {
+  margin: auto;
+  width: 49.5%;
+}
+
+.footer-text {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-text-container {
+    width: 10%;
+  }
+}
