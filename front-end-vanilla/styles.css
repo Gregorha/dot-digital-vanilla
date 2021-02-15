@@ -74,7 +74,7 @@ header {
   .nav-arrow-wrapper {
     display: none;
   }
-  
+
   header p {
     color: #213800;
   }
@@ -143,8 +143,16 @@ header {
 
 @media (min-width: 768px) {
   .slide-frame {
-    padding-top: 56.25%;
+    padding-top: unset;
+    height: 100vh;
   }
+
+  .image-slider {
+    min-width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
   .selector {
     border: 6px solid #303030;
     height: 30px;
@@ -186,6 +194,7 @@ header {
   display: block;
   height: 100%;
   max-height: inherit;
+  box-sizing: border-box;
 }
 
 .carousel-group {
@@ -214,20 +223,24 @@ header {
 }
 
 .image-frame {
-  border: 10px solid #bfbfbf;
+  margin-bottom: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  padding-top: 68.5%;
+  padding-top: 67%;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .image-frame-inside {
+  border: 10px solid #bfbfbf;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .carousel-btn {
